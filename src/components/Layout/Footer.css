@@ -1,0 +1,159 @@
+.footer {
+  padding: 74px 0 55px;
+  background: var(--dark);
+}
+
+.footer__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__cols {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  margin-top: 48px;
+}
+
+.footer__col {
+  text-align: center;
+}
+
+.footer__col h4 {
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.footer__col ul {
+  margin-top: 30px;
+  font-size: 12.5px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  color: var(--gray);
+}
+
+.footer__col--wide ul {
+  margin-top: 51px;
+}
+
+.footer__col li + li {
+  margin-top: 20px;
+}
+
+.footer__col a {
+  transition: color 0.15s;
+}
+
+.footer__col a:hover {
+  color: #fff;
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.footer__socials a {
+  display: block;
+  transition: opacity 0.15s;
+}
+
+.footer__socials a:hover {
+  opacity: 0.8;
+}
+
+.footer__copyright {
+  display: flex;
+  align-items: flex-start;
+  gap: 11px;
+  margin-top: 22px;
+  font-size: 10.5px;
+  font-weight: 700;
+  line-height: 1.286;
+  letter-spacing: 0.04em;
+  color: var(--gray);
+}
+
+.footer__copyright img {
+  width: 12px;
+  height: 12px;
+  margin-top: 1px;
+}
+
+.footer__copyright br {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 130px 0 64px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .footer {
+    height: 689px;
+    padding: 244px 0 0;
+  }
+
+  .footer__inner {
+    display: block;
+  }
+
+  .footer__cols {
+    position: absolute;
+    top: 29px;
+    left: 390px;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0;
+    margin-top: 0;
+  }
+
+  .footer__col {
+    width: 248px;
+    text-align: left;
+  }
+
+  .footer__col h4,
+  .footer__col ul {
+    line-height: 1.286;
+  }
+
+  .footer__col ul {
+    margin-top: 51px;
+  }
+
+  .footer__col li + li {
+    margin-top: 22px;
+  }
+
+  .footer__socials {
+    margin-top: 52px;
+    margin-left: 6px;
+  }
+
+  .footer__copyright {
+    margin-top: 40px;
+    margin-left: 6px;
+    font-size: 12.5px;
+  }
+
+  .footer__copyright img {
+    width: 16px;
+    height: 16px;
+  }
+
+  .footer__copyright br {
+    display: block;
+  }
+}

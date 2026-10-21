@@ -1,0 +1,153 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+}
+
+.hero__wave {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hero__wave--mobile {
+  height: 400px;
+}
+
+.hero__wave--desktop {
+  display: none;
+  height: 640px;
+}
+
+.hero__content {
+  position: relative;
+  z-index: 20;
+}
+
+.hero__text {
+  max-width: 421px;
+  padding-top: 57px;
+}
+
+.hero__text h1 {
+  white-space: nowrap;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 46px;
+  color: #fff;
+}
+
+.hero__text p {
+  max-width: 326px;
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 17px;
+  color: #fff;
+}
+
+.hero__text .btn {
+  margin-top: 30px;
+}
+
+.hero__brands {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 53px;
+  margin-top: 34px;
+}
+
+.hero__devices {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  margin-top: 74px;
+  aspect-ratio: 414 / 180;
+}
+
+.hero__monitor {
+  position: absolute;
+  top: 0;
+  left: 12.66%;
+  width: 54.9%;
+}
+
+.hero__laptop {
+  position: absolute;
+  top: 1%;
+  left: -0.24%;
+  width: 76.1%;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background: transparent;
+  }
+
+  .hero__wave--mobile {
+    height: 460px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__wave--mobile,
+  .hero__brands {
+    display: none;
+  }
+
+  .hero__wave--desktop {
+    display: block;
+  }
+
+  .hero__text {
+    padding-top: 166px;
+  }
+
+  .hero__text h1 {
+    font-size: 48px;
+    line-height: 60px;
+  }
+
+  .hero__text p {
+    max-width: none;
+    margin-top: 17px;
+    font-size: 16px;
+  }
+
+  .hero__text .btn {
+    margin-top: 38px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .hero {
+    height: 790px;
+  }
+
+  .hero__wave--desktop {
+    height: 790px;
+  }
+
+  .hero__devices {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 790px;
+    margin-top: 0;
+    aspect-ratio: auto;
+  }
+
+  .hero__monitor {
+    top: 64px;
+    left: 31.92%;
+    width: 58.78%;
+  }
+
+  .hero__laptop {
+    top: 70.87px;
+    left: 18.11%;
+    width: 81.52%;
+  }
+}

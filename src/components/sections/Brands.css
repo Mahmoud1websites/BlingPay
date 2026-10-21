@@ -1,0 +1,30 @@
+.brands {
+  display: none;
+  padding-top: 33px;
+  background: #fff;
+}
+
+.brands ul {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  width: fit-content;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.brands__faded {
+  opacity: 0.4;
+}
+
+@media (min-width: 1024px) {
+  .brands {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .brands ul {
+    gap: 139px;
+  }
+}
