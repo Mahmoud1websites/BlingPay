@@ -4,7 +4,7 @@
   background: #fff;
 }
 
-.hero__wave {
+.hero-wave {
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -12,26 +12,26 @@
   width: 100%;
 }
 
-.hero__wave--mobile {
+.hero-wave-mobile {
   height: 400px;
 }
 
-.hero__wave--desktop {
+.hero-wave-desktop {
   display: none;
   height: 640px;
 }
 
-.hero__content {
+.hero-content {
   position: relative;
   z-index: 20;
 }
 
-.hero__text {
+.hero-text {
   max-width: 421px;
   padding-top: 57px;
 }
 
-.hero__text h1 {
+.hero-text h1 {
   white-space: nowrap;
   font-size: 34px;
   font-weight: 800;
@@ -39,7 +39,7 @@
   color: #fff;
 }
 
-.hero__text p {
+.hero-text p {
   max-width: 326px;
   margin-top: 10px;
   font-size: 13px;
@@ -47,11 +47,11 @@
   color: #fff;
 }
 
-.hero__text .btn {
+.hero-text .button {
   margin-top: 30px;
 }
 
-.hero__brands {
+.hero-brands {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -59,7 +59,7 @@
   margin-top: 34px;
 }
 
-.hero__devices {
+.hero-devices {
   position: relative;
   z-index: 10;
   width: 100%;
@@ -67,14 +67,14 @@
   aspect-ratio: 414 / 180;
 }
 
-.hero__monitor {
+.hero-monitor {
   position: absolute;
   top: 0;
   left: 12.66%;
   width: 54.9%;
 }
 
-.hero__laptop {
+.hero-laptop {
   position: absolute;
   top: 1%;
   left: -0.24%;
@@ -86,37 +86,37 @@
     background: transparent;
   }
 
-  .hero__wave--mobile {
+  .hero-wave-mobile {
     height: 460px;
   }
 }
 
 @media (min-width: 1024px) {
-  .hero__wave--mobile,
-  .hero__brands {
+  .hero-wave-mobile,
+  .hero-brands {
     display: none;
   }
 
-  .hero__wave--desktop {
+  .hero-wave-desktop {
     display: block;
   }
 
-  .hero__text {
+  .hero-text {
     padding-top: 166px;
   }
 
-  .hero__text h1 {
+  .hero-text h1 {
     font-size: 48px;
     line-height: 60px;
   }
 
-  .hero__text p {
+  .hero-text p {
     max-width: none;
     margin-top: 17px;
     font-size: 16px;
   }
 
-  .hero__text .btn {
+  .hero-text .button {
     margin-top: 38px;
   }
 }
@@ -126,11 +126,11 @@
     height: 790px;
   }
 
-  .hero__wave--desktop {
+  .hero-wave-desktop {
     height: 790px;
   }
 
-  .hero__devices {
+  .hero-devices {
     position: absolute;
     top: 0;
     left: 0;
@@ -139,13 +139,13 @@
     aspect-ratio: auto;
   }
 
-  .hero__monitor {
+  .hero-monitor {
     top: 64px;
     left: 31.92%;
     width: 58.78%;
   }
 
-  .hero__laptop {
+  .hero-laptop {
     top: 70.87px;
     left: 18.11%;
     width: 81.52%;

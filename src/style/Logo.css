@@ -17,34 +17,34 @@
   color: #fff;
 }
 
-.logo--footer {
+.logo-footer {
   gap: 7px;
 }
 
-.logo--footer img {
+.logo-footer img {
   width: 29.4px;
   height: 32px;
 }
 
-.logo--footer span {
+.logo-footer span {
   font-size: 27.6px;
   line-height: 38px;
 }
 
 @media (min-width: 1024px) {
   .logo,
-  .logo--footer {
+  .logo-footer {
     gap: 9px;
   }
 
   .logo img,
-  .logo--footer img {
+  .logo-footer img {
     width: 38.3px;
     height: 41.5px;
   }
 
   .logo span,
-  .logo--footer span {
+  .logo-footer span {
     font-size: 36px;
     line-height: 1;
   }

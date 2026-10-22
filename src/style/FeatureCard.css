@@ -1,4 +1,4 @@
-.card {
+.feature-card {
   position: relative;
   width: 100%;
   max-width: 281px;
@@ -9,7 +9,7 @@
   box-shadow: 7px 10px 50px #e8e2f0;
 }
 
-.card::before {
+.feature-card::before {
   content: "";
   position: absolute;
   top: 0;
@@ -20,12 +20,12 @@
   background: linear-gradient(93deg, var(--teal) 3.87%, var(--purple) 110.68%);
 }
 
-.card img {
+.feature-card img {
   width: 24px;
   height: 24px;
 }
 
-.card h3 {
+.feature-card h3 {
   margin-top: 2px;
   white-space: nowrap;
   font-size: 19px;
@@ -35,7 +35,7 @@
   color: var(--card-title);
 }
 
-.card p {
+.feature-card p {
   width: 200px;
   margin-top: 8px;
   font-size: 14px;

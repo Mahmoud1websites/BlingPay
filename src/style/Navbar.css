@@ -1,10 +1,10 @@
-.nav {
+.navbar {
   position: relative;
   z-index: 30;
   padding-top: 22px;
 }
 
-.nav__bar {
+.navbar-row {
   position: relative;
   display: flex;
   align-items: center;
@@ -12,7 +12,7 @@
   height: 27.5px;
 }
 
-.nav__links {
+.navbar-links {
   position: absolute;
   left: 33.85%;
   display: none;
@@ -23,28 +23,28 @@
   color: #fff;
 }
 
-.nav__links a {
+.navbar-links a {
   transition: opacity 0.15s;
 }
 
-.nav__links a:hover {
+.navbar-links a:hover {
   opacity: 0.8;
 }
 
-.nav__actions {
+.navbar-buttons {
   display: none;
   align-items: center;
   gap: 38px;
 }
 
-.nav__support {
+.navbar-support {
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
   color: #fff;
 }
 
-.nav__toggle {
+.menu-button {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -52,51 +52,51 @@
   height: 40px;
 }
 
-.nav__toggle img {
+.menu-button img {
   width: 17.5px;
   height: 10px;
 }
 
-.nav__menu {
+.mobile-menu {
   margin-top: 16px;
   padding: 20px;
   border-radius: 10px;
   background: rgba(33, 9, 51, 0.95);
 }
 
-.nav__menu ul {
+.mobile-menu ul {
   font-size: 16px;
   color: #fff;
 }
 
-.nav__menu li + li {
+.mobile-menu li + li {
   margin-top: 16px;
 }
 
-.nav__menu-bold {
+.mobile-menu-bold {
   font-weight: 700;
 }
 
-.nav__menu .btn {
+.mobile-menu .button {
   margin-top: 20px;
 }
 
 @media (min-width: 1024px) {
-  .nav {
+  .navbar {
     padding-top: 30px;
   }
 
-  .nav__bar {
+  .navbar-row {
     height: 49px;
   }
 
-  .nav__links,
-  .nav__actions {
+  .navbar-links,
+  .navbar-buttons {
     display: flex;
   }
 
-  .nav__toggle,
-  .nav__menu {
+  .menu-button,
+  .mobile-menu {
     display: none;
   }
 }

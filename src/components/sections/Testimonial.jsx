@@ -1,5 +1,5 @@
 import { customers } from '../../assets'
-import './Testimonial.css'
+import '../../style/Testimonial.css'
 
 const floating = [
   { src: customers.customer3, x: 1095, y: 183, size: 106 },
@@ -19,32 +19,32 @@ function Photo({ src, size, className = '', style }) {
 
 export default function Testimonial() {
   return (
-    <section className="testimonial">
-      <div className="testimonial__band">
-        <div className="container testimonial__inner">
-          <div className="testimonial__heading">
-            <span aria-hidden className="testimonial__blob" />
+    <section className="reviews">
+      <div className="reviews-background">
+        <div className="container reviews-box">
+          <div className="reviews-heading">
+            <span aria-hidden className="reviews-shape" />
             <h2>
               What Our <span>Customers</span>
               <br />
               Are Saying
             </h2>
-            <p className="testimonial__intro">
+            <p className="reviews-intro">
               Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw
             </p>
           </div>
 
-          <div className="testimonial__main">
-            <Photo src={customers.leo} size={132} className="photo--leo" />
-            <div className="testimonial__quote">
-              <p className="testimonial__text">
+          <div className="reviews-main">
+            <Photo src={customers.leo} size={132} className="photo-main" />
+            <div className="reviews-quote">
+              <p className="reviews-text">
                 Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem lacus a, interdum nulla sem adipiscing inw
               </p>
-              <p className="testimonial__name">Leo Maynus</p>
-              <p className="testimonial__role">CEO at Softpanda</p>
+              <p className="reviews-name">Leo Maynus</p>
+              <p className="reviews-job">CEO at Softpanda</p>
             </div>
 
-            <div className="testimonial__dots" aria-hidden>
+            <div className="reviews-dots" aria-hidden>
               {[0, 1, 2, 3, 4].map((i) => (
                 <span key={i} className={i === 2 ? 'active' : ''} />
               ))}
@@ -52,13 +52,13 @@ export default function Testimonial() {
           </div>
 
           {floating.map((f) => (
-            <Photo key={f.x} src={f.src} size={f.size} className="photo--float" style={{ left: f.x, top: f.y }} />
+            <Photo key={f.x} src={f.src} size={f.size} className="photo-floating" style={{ left: f.x, top: f.y }} />
           ))}
         </div>
       </div>
 
-      <span aria-hidden className="testimonial__stripe testimonial__stripe--left" />
-      <span aria-hidden className="testimonial__stripe testimonial__stripe--right" />
+      <span aria-hidden className="reviews-stripe reviews-stripe-left" />
+      <span aria-hidden className="reviews-stripe reviews-stripe-right" />
     </section>
   )
 }

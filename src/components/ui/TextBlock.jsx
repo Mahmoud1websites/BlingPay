@@ -1,18 +1,18 @@
 import LearnMore from './LearnMore'
-import './TextBlock.css'
+import '../../style/TextBlock.css'
 
-export default function TextBlock({ eyebrow, title, accent, after, children, size = 'md', blob = '', className = '' }) {
+export default function TextBlock({ label, title, highlight, after, children, size = 'normal', shape = '', className = '' }) {
   return (
-    <div className={`text-block text-block--${size} ${className}`}>
-      <span aria-hidden className={`text-block__blob ${blob}`} />
-      <div className="text-block__inner">
-        {eyebrow && <p className="text-block__eyebrow">{eyebrow}</p>}
-        <h2 className="text-block__title">
+    <div className={`text-block text-block-${size} ${className}`}>
+      <span aria-hidden className={`text-block-shape ${shape}`} />
+      <div className="text-block-box">
+        {label && <p className="text-block-label">{label}</p>}
+        <h2 className="text-block-title">
           {title}
-          <span>{accent}</span>
+          <span>{highlight}</span>
           {after}
         </h2>
-        <p className="text-block__body">{children}</p>
+        <p className="text-block-text">{children}</p>
         <LearnMore size={size} />
       </div>
     </div>

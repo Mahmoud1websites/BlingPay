@@ -3,14 +3,14 @@
   background: var(--dark);
 }
 
-.footer__inner {
+.footer-box {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.footer__cols {
+.footer-columns {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,11 +18,11 @@
   margin-top: 48px;
 }
 
-.footer__col {
+.footer-column {
   text-align: center;
 }
 
-.footer__col h4 {
+.footer-column h4 {
   font-size: 12.5px;
   font-weight: 700;
   line-height: 18px;
@@ -30,7 +30,7 @@
   color: #fff;
 }
 
-.footer__col ul {
+.footer-column ul {
   margin-top: 30px;
   font-size: 12.5px;
   font-weight: 700;
@@ -39,39 +39,39 @@
   color: var(--gray);
 }
 
-.footer__col--wide ul {
+.footer-column-wide ul {
   margin-top: 51px;
 }
 
-.footer__col li + li {
+.footer-column li + li {
   margin-top: 20px;
 }
 
-.footer__col a {
+.footer-column a {
   transition: color 0.15s;
 }
 
-.footer__col a:hover {
+.footer-column a:hover {
   color: #fff;
 }
 
-.footer__socials {
+.footer-social {
   display: flex;
   align-items: center;
   gap: 32px;
   margin-top: 48px;
 }
 
-.footer__socials a {
+.footer-social a {
   display: block;
   transition: opacity 0.15s;
 }
 
-.footer__socials a:hover {
+.footer-social a:hover {
   opacity: 0.8;
 }
 
-.footer__copyright {
+.footer-copyright {
   display: flex;
   align-items: flex-start;
   gap: 11px;
@@ -83,13 +83,13 @@
   color: var(--gray);
 }
 
-.footer__copyright img {
+.footer-copyright img {
   width: 12px;
   height: 12px;
   margin-top: 1px;
 }
 
-.footer__copyright br {
+.footer-copyright br {
   display: none;
 }
 
@@ -105,11 +105,11 @@
     padding: 244px 0 0;
   }
 
-  .footer__inner {
+  .footer-box {
     display: block;
   }
 
-  .footer__cols {
+  .footer-columns {
     position: absolute;
     top: 29px;
     left: 390px;
@@ -119,41 +119,41 @@
     margin-top: 0;
   }
 
-  .footer__col {
+  .footer-column {
     width: 248px;
     text-align: left;
   }
 
-  .footer__col h4,
-  .footer__col ul {
+  .footer-column h4,
+  .footer-column ul {
     line-height: 1.286;
   }
 
-  .footer__col ul {
+  .footer-column ul {
     margin-top: 51px;
   }
 
-  .footer__col li + li {
+  .footer-column li + li {
     margin-top: 22px;
   }
 
-  .footer__socials {
+  .footer-social {
     margin-top: 52px;
     margin-left: 6px;
   }
 
-  .footer__copyright {
+  .footer-copyright {
     margin-top: 40px;
     margin-left: 6px;
     font-size: 12.5px;
   }
 
-  .footer__copyright img {
+  .footer-copyright img {
     width: 16px;
     height: 16px;
   }
 
-  .footer__copyright br {
+  .footer-copyright br {
     display: block;
   }
 }

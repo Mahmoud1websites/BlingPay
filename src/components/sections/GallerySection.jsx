@@ -1,6 +1,6 @@
 import TextBlock from '../ui/TextBlock'
 import { collage } from '../../assets'
-import './GallerySection.css'
+import '../../style/GallerySection.css'
 
 const tiles = [
   { src: collage.collage2, x: -12, y: -6, w: 331, h: 124 },
@@ -37,22 +37,22 @@ function Tiles({ list }) {
 export default function GallerySection() {
   return (
     <section className="gallery">
-      <div className="container gallery__inner">
-        <div className="gallery__mobile">
+      <div className="container gallery-box">
+        <div className="gallery-mobile">
           <Tiles list={mobileTiles} />
         </div>
 
-        <div className="gallery__desktop">
-          <div className="gallery__frame">
+        <div className="gallery-desktop">
+          <div className="gallery-frame">
             <Tiles list={tiles} />
           </div>
         </div>
 
         <TextBlock
-          eyebrow="Secure transaction"
-          title={<>Save Your <br className="lg-break" /></>}
-          accent="Savings"
-          className="gallery__text"
+          label="Secure transaction"
+          title={<>Save Your <br className="desktop-break" /></>}
+          highlight="Savings"
+          className="gallery-text"
         >
           Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw
         </TextBlock>

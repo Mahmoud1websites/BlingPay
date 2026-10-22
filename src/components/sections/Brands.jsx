@@ -1,5 +1,5 @@
 import { brands } from '../../assets'
-import './Brands.css'
+import '../../style/Brands.css'
 
 export default function Brands() {
   return (
@@ -7,7 +7,7 @@ export default function Brands() {
       <ul>
         {brands.map((b) => (
           <li key={b.name}>
-            <img src={b.src} alt={b.name} style={{ width: b.width }} className={b.faded ? 'brands__faded' : ''} />
+            <img src={b.src} alt={b.name} style={{ width: b.width }} className={b.faded ? 'brand-faded' : ''} />
           </li>
         ))}
       </ul>

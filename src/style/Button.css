@@ -1,4 +1,4 @@
-.btn {
+.button {
   position: relative;
   isolation: isolate;
   display: inline-flex;
@@ -10,11 +10,11 @@
   transition: filter 0.15s;
 }
 
-.btn:hover {
+.button:hover {
   filter: brightness(1.05);
 }
 
-.btn--hero {
+.button-hero {
   width: 162px;
   height: 40.5px;
   border: 1px solid rgba(171, 163, 163, 0.2);
@@ -23,14 +23,14 @@
   font-size: 13px;
 }
 
-.btn--pill {
+.button-round {
   padding: 12px 40px;
   border-radius: 96px;
   background: var(--gold);
   font-size: 14px;
 }
 
-.btn--gold {
+.button-gold {
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -38,7 +38,7 @@
   font-size: 12.5px;
 }
 
-.btn--gold::before {
+.button-gold::before {
   content: "";
   position: absolute;
   top: 20px;
@@ -53,7 +53,7 @@
 }
 
 @media (min-width: 1024px) {
-  .btn--hero {
+  .button-hero {
     width: 200px;
     height: 50px;
     border-radius: 4px;

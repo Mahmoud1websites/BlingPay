@@ -1,6 +1,6 @@
 import TextBlock from '../ui/TextBlock'
 import { people } from '../../assets'
-import './PeopleSection.css'
+import '../../style/PeopleSection.css'
 
 const faces = [
   { src: people[3], x: 255, y: 143, rotate: -76, focus: '50% 20%', zoom: 1.15 },
@@ -15,7 +15,7 @@ const size = 146
 function Face({ src, x, y, rotate, focus, zoom }) {
   return (
     <span
-      className="people__face"
+      className="people-face"
       style={{ left: x - size / 2, top: y - size / 2, transform: `rotate(${rotate}deg)` }}
     >
       <img
@@ -30,19 +30,19 @@ function Face({ src, x, y, rotate, focus, zoom }) {
 export default function PeopleSection() {
   return (
     <section className="people">
-      <div className="container people__inner">
-        <div className="people__wrap">
-          <div className="people__cluster">
+      <div className="container people-box">
+        <div className="people-photos">
+          <div className="people-group">
             {faces.map((f, i) => (
               <Face key={i} {...f} />
             ))}
           </div>
         </div>
         <TextBlock
-          eyebrow="Mobile transaction"
-          title={<>Smart Mobile <br className="lg-break" /></>}
-          accent="Banking"
-          className="people__text"
+          label="Mobile transaction"
+          title={<>Smart Mobile <br className="desktop-break" /></>}
+          highlight="Banking"
+          className="people-text"
         >
           Hac sem ut eget tellus diam convallis lacus a, interdum nulla sem adipiscing inw
         </TextBlock>

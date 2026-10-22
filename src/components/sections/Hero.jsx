@@ -1,11 +1,11 @@
 import Navbar from '../Layout/Navbar'
 import Button from '../ui/Button'
 import { hero, brandsLight } from '../../assets'
-import './Hero.css'
+import '../../style/Hero.css'
 
 function MobileWave() {
   return (
-    <svg className="hero__wave hero__wave--mobile" viewBox="0 0 414 400" preserveAspectRatio="none" aria-hidden>
+    <svg className="hero-wave hero-wave-mobile" viewBox="0 0 414 400" preserveAspectRatio="none" aria-hidden>
       <defs>
         <linearGradient id="heroMobile" x1="0" y1="0.15" x2="1" y2="0.85">
           <stop offset="0.25" stopColor="#5c0e62" />
@@ -24,7 +24,7 @@ function MobileWave() {
 
 function DesktopWave() {
   return (
-    <svg className="hero__wave hero__wave--desktop" viewBox="0 0 1500 790" preserveAspectRatio="none" aria-hidden>
+    <svg className="hero-wave hero-wave-desktop" viewBox="0 0 1500 790" preserveAspectRatio="none" aria-hidden>
       <defs>
         <linearGradient id="heroMain" x1="0" y1="0.42" x2="1" y2="0.58">
           <stop offset="0.0127" stopColor="#5c0e62" />
@@ -49,8 +49,8 @@ export default function Hero() {
 
       <Navbar />
 
-      <div className="container hero__content">
-        <div className="hero__text">
+      <div className="container hero-content">
+        <div className="hero-text">
           <h1>
             Get Your <br /> Payment Faster
           </h1>
@@ -58,7 +58,7 @@ export default function Hero() {
           <Button variant="hero">Start Now</Button>
         </div>
 
-        <ul className="hero__brands">
+        <ul className="hero-brands">
           {brandsLight.map((b) => (
             <li key={b.name}>
               <img src={b.src} alt={b.name} style={{ width: b.width, opacity: b.opacity }} />
@@ -67,9 +67,9 @@ export default function Hero() {
         </ul>
       </div>
 
-      <div className="hero__devices">
-        <img src={hero.monitor} alt="" className="hero__monitor" />
-        <img src={hero.laptop} alt="Blinqpay dashboard" className="hero__laptop" />
+      <div className="hero-devices">
+        <img src={hero.monitor} alt="" className="hero-monitor" />
+        <img src={hero.laptop} alt="Blinqpay dashboard" className="hero-laptop" />
       </div>
     </header>
   )

@@ -1,6 +1,6 @@
 import Logo from '../ui/Logo'
 import { icons } from '../../assets'
-import './Footer.css'
+import '../../style/Footer.css'
 
 const columns = [
   {
@@ -23,12 +23,12 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="footer">
-      <div className="container footer__inner">
+      <div className="container footer-box">
         <Logo size="footer" />
 
-        <div className="footer__cols">
+        <div className="footer-columns">
           {columns.map((col) => (
-            <div key={col.title} className={`footer__col ${col.wide ? 'footer__col--wide' : ''}`}>
+            <div key={col.title} className={`footer-column ${col.wide ? 'footer-column-wide' : ''}`}>
               <h4>{col.title}</h4>
               <ul>
                 {col.links.map((l) => (
@@ -41,7 +41,7 @@ export default function Footer() {
           ))}
         </div>
 
-        <ul className="footer__socials">
+        <ul className="footer-social">
           {socials.map((s) => (
             <li key={s.label}>
               <a href="#" aria-label={s.label}>
@@ -51,7 +51,7 @@ export default function Footer() {
           ))}
         </ul>
 
-        <p className="footer__copyright">
+        <p className="footer-copyright">
           <img src={icons.copyright} alt="" />
           <span>
             Copy Right {new Date().getFullYear()}.

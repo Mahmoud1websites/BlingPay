@@ -1,25 +1,25 @@
-.testimonial {
+.reviews {
   position: relative;
   background: #fff;
 }
 
-.testimonial__band {
+.reviews-background {
   position: relative;
   overflow: hidden;
   padding: 89px 0 50px;
   background: linear-gradient(107deg, var(--purple) 17.75%, var(--teal) 81.75%);
 }
 
-.testimonial__inner {
+.reviews-box {
   position: relative;
 }
 
-.testimonial__heading {
+.reviews-heading {
   position: relative;
   text-align: center;
 }
 
-.testimonial__blob {
+.reviews-shape {
   position: absolute;
   top: -49px;
   left: -47px;
@@ -31,7 +31,7 @@
   opacity: 0.15;
 }
 
-.testimonial__heading h2 {
+.reviews-heading h2 {
   position: relative;
   white-space: nowrap;
   font-size: 21px;
@@ -41,11 +41,11 @@
   color: #fff;
 }
 
-.testimonial__heading h2 span {
+.reviews-heading h2 span {
   color: var(--purple);
 }
 
-.testimonial__intro {
+.reviews-intro {
   display: none;
   width: 432px;
   margin-top: 39px;
@@ -56,7 +56,7 @@
   color: #fff;
 }
 
-.testimonial__main {
+.reviews-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,19 +77,19 @@
   object-fit: cover;
 }
 
-.photo--float {
+.photo-floating {
   position: absolute;
   display: none;
 }
 
-.testimonial__quote {
+.reviews-quote {
   width: calc(100% + 18px);
   max-width: 367px;
   margin-top: 34px;
   text-align: center;
 }
 
-.testimonial__text {
+.reviews-text {
   font-size: 12.5px;
   font-weight: 700;
   line-height: 18px;
@@ -97,7 +97,7 @@
   color: #fff;
 }
 
-.testimonial__name {
+.reviews-name {
   margin-top: 18px;
   font-size: 19px;
   font-weight: 900;
@@ -107,7 +107,7 @@
   color: var(--gold);
 }
 
-.testimonial__role {
+.reviews-job {
   margin-top: 4px;
   font-size: 12.5px;
   font-weight: 700;
@@ -116,25 +116,25 @@
   color: var(--gold);
 }
 
-.testimonial__dots {
+.reviews-dots {
   display: flex;
   align-items: center;
   gap: 4px;
   margin-top: 37px;
 }
 
-.testimonial__dots span {
+.reviews-dots span {
   width: 8px;
   height: 8px;
   border-radius: 50%;
   background: #434472;
 }
 
-.testimonial__dots .active {
+.reviews-dots .active {
   background: #fff;
 }
 
-.testimonial__stripe {
+.reviews-stripe {
   pointer-events: none;
   position: absolute;
   top: -216px;
@@ -146,62 +146,62 @@
   opacity: 0.3;
 }
 
-.testimonial__stripe--left {
+.reviews-stripe-left {
   left: -110px;
 }
 
-.testimonial__stripe--right {
+.reviews-stripe-right {
   right: -11px;
 }
 
 @media (min-width: 768px) {
-  .testimonial__band {
+  .reviews-background {
     padding: 110px 0 150px;
     background: linear-gradient(99.22deg, var(--purple) 1.27%, var(--teal) 92.23%);
     clip-path: polygon(0 70px, 100% 0, 100% 100%, 0 100%);
   }
 
-  .testimonial__heading h2 {
+  .reviews-heading h2 {
     font-size: 24px;
     line-height: 1.286;
     letter-spacing: 0.06em;
   }
 
-  .testimonial__quote {
+  .reviews-quote {
     width: 100%;
   }
 
-  .testimonial__text {
+  .reviews-text {
     font-size: 14px;
     line-height: 1.286;
   }
 
-  .testimonial__name {
+  .reviews-name {
     margin-top: 34px;
     line-height: 1.286;
   }
 
-  .testimonial__role {
+  .reviews-job {
     line-height: 1.286;
   }
 
-  .testimonial__dots {
+  .reviews-dots {
     margin-top: 42px;
   }
 }
 
 @media (min-width: 1280px) {
-  .testimonial__band {
+  .reviews-background {
     height: 996px;
     padding: 0;
     clip-path: polygon(0 350px, 100% 20px, 100% 100%, 0 100%);
   }
 
-  .testimonial__inner {
+  .reviews-box {
     height: 100%;
   }
 
-  .testimonial__heading {
+  .reviews-heading {
     position: absolute;
     top: 541px;
     left: 33px;
@@ -209,42 +209,42 @@
     text-align: left;
   }
 
-  .testimonial__blob,
-  .testimonial__intro {
+  .reviews-shape,
+  .reviews-intro {
     display: block;
   }
 
-  .testimonial__heading h2 {
+  .reviews-heading h2 {
     font-size: 35px;
   }
 
-  .testimonial__main {
+  .reviews-main {
     margin-top: 0;
   }
 
-  .photo--leo {
+  .photo-main {
     position: absolute;
     top: 255px;
     left: 764px;
   }
 
-  .testimonial__quote {
+  .reviews-quote {
     position: absolute;
     top: 421px;
     left: 646px;
     margin-top: 0;
   }
 
-  .testimonial__name {
+  .reviews-name {
     margin-top: 11px;
   }
 
-  .testimonial__dots {
+  .reviews-dots {
     display: none;
   }
 
-  .photo--float,
-  .testimonial__stripe {
+  .photo-floating,
+  .reviews-stripe {
     display: block;
   }
 }

@@ -1,4 +1,4 @@
-.cta {
+.try-section {
   position: relative;
   z-index: 10;
   display: none;
@@ -6,7 +6,7 @@
   padding: 0 24px;
 }
 
-.cta__card {
+.try-card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@
   background: #fff;
 }
 
-.cta__blob {
+.try-shape {
   position: absolute;
   top: 14px;
   left: 20px;
@@ -29,7 +29,7 @@
   background: var(--bg);
 }
 
-.cta__card h2 {
+.try-card h2 {
   position: relative;
   text-align: center;
   font-size: 24px;
@@ -39,45 +39,45 @@
   color: var(--heading);
 }
 
-.cta__card h2 span {
+.try-card h2 span {
   color: var(--purple2);
 }
 
 @media (min-width: 768px) {
-  .cta {
+  .try-section {
     display: block;
     padding: 0 40px;
   }
 
-  .cta__card h2 {
+  .try-card h2 {
     font-size: 32px;
   }
 }
 
 @media (min-width: 1280px) {
-  .cta {
+  .try-section {
     margin: -96px 0 -86px;
     padding: 0;
   }
 
-  .cta__card {
+  .try-card {
     flex-direction: row;
     gap: 0;
     height: 182px;
     padding: 0;
   }
 
-  .cta__blob {
+  .try-shape {
     left: 108px;
   }
 
-  .cta__card h2 {
+  .try-card h2 {
     margin-left: 152px;
     text-align: left;
     font-size: 35px;
   }
 
-  .cta__card .btn {
+  .try-card .button {
     position: absolute;
     top: 66px;
     left: 765px;

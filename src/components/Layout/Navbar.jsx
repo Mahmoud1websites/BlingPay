@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Logo from '../ui/Logo'
 import Button from '../ui/Button'
 import { icons } from '../../assets'
-import './Navbar.css'
+import '../../style/Navbar.css'
 
 const links = ['Products', 'Developers', 'Company', 'Pricing']
 
@@ -10,13 +10,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
 
   return (
-    <nav className="container nav">
-      <div className="nav__bar">
+    <nav className="container navbar">
+      <div className="navbar-row">
         <a href="#" aria-label="Blinqpay home">
           <Logo />
         </a>
 
-        <ul className="nav__links">
+        <ul className="navbar-links">
           {links.map((l) => (
             <li key={l}>
               <a href="#">{l}</a>
@@ -24,11 +24,11 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <div className="nav__actions">
-          <a href="#" className="nav__support">
+        <div className="navbar-buttons">
+          <a href="#" className="navbar-support">
             Support
           </a>
-          <Button variant="pill">Sign in</Button>
+          <Button variant="round">Sign in</Button>
         </div>
 
         <button
@@ -36,14 +36,14 @@ export default function Navbar() {
           aria-label="Menu"
           aria-expanded={open}
           onClick={() => setOpen((v) => !v)}
-          className="nav__toggle"
+          className="menu-button"
         >
           <img src={icons.menu} alt="" />
         </button>
       </div>
 
       {open && (
-        <div className="nav__menu">
+        <div className="mobile-menu">
           <ul>
             {links.map((l) => (
               <li key={l}>
@@ -51,12 +51,12 @@ export default function Navbar() {
               </li>
             ))}
             <li>
-              <a href="#" className="nav__menu-bold">
+              <a href="#" className="mobile-menu-bold">
                 Support
               </a>
             </li>
           </ul>
-          <Button variant="pill">Sign in</Button>
+          <Button variant="round">Sign in</Button>
         </div>
       )}
     </nav>
